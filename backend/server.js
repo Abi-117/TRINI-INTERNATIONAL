@@ -21,7 +21,15 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:8080",
+      "https://trinideploy.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 // Middleware

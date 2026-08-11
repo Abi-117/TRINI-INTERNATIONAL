@@ -23,7 +23,7 @@ const [editImage, setEditImage] = useState<File | null>(null);
   const fetchCategories = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/categories"
+        "https://trini-international.onrender.com/api/categories"
       );
 
       setCategories(res.data.categories);
@@ -47,7 +47,7 @@ const [editImage, setEditImage] = useState<File | null>(null);
 
     try {
       await axios.post(
-  "http://localhost:5000/api/categories",
+  "https://trini-international.onrender.com/api/categories",
   formData,
   {
     headers: {
@@ -78,7 +78,7 @@ const updateCategory = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/categories/${editingId}`,
+      `https://trini-international.onrender.com/api/categories/${editingId}`,
       formData,
       {
         headers: {
@@ -100,7 +100,7 @@ const updateCategory = async () => {
   const deleteCategory = async (id: string) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/categories/${id}`,
+        `https://trini-international.onrender.com/api/categories/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

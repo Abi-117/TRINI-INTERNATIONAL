@@ -22,7 +22,7 @@ const Customers = () => {
   const fetchCustomers = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/customer/admin/all",
+        "https://trini-international.onrender.com/api/customer/admin/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,

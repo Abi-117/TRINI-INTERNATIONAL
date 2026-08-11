@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/shared/section";
 import { ProductCard } from "@/components/product/product-card";
 
-const API = "http://localhost:5000/api";
+const API = "https://trini-international.onrender.com/api";
 
 interface Product {
   _id: string;

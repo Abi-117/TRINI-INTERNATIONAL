@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/categories";
+const API = "https://trini-international.onrender.com/api/categories";
 
 export const categoryService = {
   async getAll() {

@@ -25,7 +25,7 @@ const Login = () => {
 
     try {
       const res = await axios.post<LoginResponse>(
-        "http://localhost:5000/api/admin/login",
+        "https://trini-international.onrender.com/api/admin/login",
         {
           email,
           password,

@@ -56,10 +56,10 @@ interface Product {
 // ============================================================
 
 const API =
-  "http://localhost:5000/api/products";
+  "https://trini-international.onrender.com/api/products";
 
 const CATEGORY_API =
-  "http://localhost:5000/api/categories";
+  "https://trini-international.onrender.com/api/categories";
 
 // ============================================================
 // MEDIA DETECTION

@@ -26,7 +26,7 @@ import { cn } from "@/lib/utils";
    API
 ========================================================= */
 
-const API = "http://localhost:5000/api";
+const API = "https://trini-international.onrender.com/api";
 
 /* =========================================================
    TYPES

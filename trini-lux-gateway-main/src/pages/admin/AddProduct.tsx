@@ -13,7 +13,7 @@ interface Specification {
   value: string;
 }
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://trini-international.onrender.com";
 
 const AddProduct = () => {
   const navigate = useNavigate();

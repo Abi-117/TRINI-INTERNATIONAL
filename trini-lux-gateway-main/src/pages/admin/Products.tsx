@@ -31,7 +31,7 @@ const Products = () => {
   const fetchProducts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://trini-international.onrender.com/api/products"
       );
 
       setProducts(res.data.products || []);
@@ -49,7 +49,7 @@ const Products = () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`,
+        `https://trini-international.onrender.com/api/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

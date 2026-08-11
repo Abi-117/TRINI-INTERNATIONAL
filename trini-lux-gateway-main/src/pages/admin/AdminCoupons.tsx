@@ -56,7 +56,7 @@ function Coupons() {
   const fetchCoupons = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/coupons"
+        "https://trini-international.onrender.com/api/coupons",
       );
 
       setCoupons(res.data.coupons || []);
@@ -157,7 +157,7 @@ function Coupons() {
 
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/coupons/${editingId}`,
+          `https://trini-international.onrender.com/api/coupons/${editingId}`,
           payload,
           {
             headers: {
@@ -167,7 +167,8 @@ function Coupons() {
         );
       } else {
         await axios.post(
-          "http://localhost:5000/api/coupons",
+          "https://trini-international.onrender.com/api/coupons",
+        
           payload,
           {
             headers: {
@@ -249,7 +250,7 @@ function Coupons() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/coupons/${id}`,
+        `https://trini-international.onrender.com/api/coupons/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

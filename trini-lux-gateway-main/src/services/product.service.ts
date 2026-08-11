@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/products";
+const API = "https://trini-international.onrender.com/api/products";
 
 const getAdminToken = () => {
   if (typeof window === "undefined") return null;

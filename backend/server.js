@@ -26,7 +26,7 @@ app.use(
     origin: [
       "http://localhost:8080",
       "https://trinideploy.vercel.app",
-      "https://www.triniinternational.com/",
+      "https://www.triniinternational.com",
     ],
     credentials: true,
   })

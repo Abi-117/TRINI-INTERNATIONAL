@@ -47,7 +47,7 @@ app.use(
   "/api/customer/auth",
   customerRoutes
 );
-// app.use("/api/customer", customerRoutes);
+app.use("/api/customer", customerRoutes);
 app.use("/api/coupons", couponRoutes);
 app.use(
   "/api/address",

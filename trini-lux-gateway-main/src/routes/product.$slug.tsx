@@ -274,10 +274,27 @@ const [submitting, setSubmitting] = useState(false);
   // RECENT PRODUCTS
   //------------------------------------------------
 
- const recent = recentlyViewed
+ const recentSlugs = recentlyViewed
   .filter((item) => item !== slug)
   .slice(0, 4);
 
+const { data: recentProducts = [] } = useQuery({
+  queryKey: ["recently-viewed", recentSlugs],
+  enabled: recentSlugs.length > 0,
+  queryFn: async () => {
+    const products = await Promise.all(
+      recentSlugs.map(async (recentSlug) => {
+        try {
+          return await catalogService.getProduct(recentSlug);
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    return products.filter(Boolean);
+  },
+});
   //------------------------------------------------
   // SHARE
   //------------------------------------------------
@@ -1160,38 +1177,25 @@ key={item._id || item.id || item.slug}
 
       {/* ================= Recently Viewed ================= */}
 
-      {recent.length > 0 && (
+     {recentProducts.length > 0 && (
+  <section className="container-x pb-24">
+    <h2 className="mb-8 text-2xl font-bold">
+      Recently Viewed
+    </h2>
 
-        <section className="container-x pb-24">
-
-          <h2 className="mb-8 text-2xl font-bold">
-            Recently Viewed
-          </h2>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-
-            {recent.map(
-              (
-                item: any,
-                index: number
-              ) =>
-
-                item ? (
-
-                  <ProductCard
-                    key={item._id || index}
-                    product={item}
-                    index={index}
-                  />
-
-                ) : null
-            )}
-
-          </div>
-
-        </section>
-
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {recentProducts.map(
+        (item: any, index: number) => (
+          <ProductCard
+            key={item._id || item.slug || index}
+            product={item}
+            index={index}
+          />
+        )
       )}
+    </div>
+  </section>
+)}
 
     </>
   );

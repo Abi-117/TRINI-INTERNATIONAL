@@ -22,17 +22,13 @@ const quickLinks = [
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/trini_international/",
     icon: Instagram,
   },
-  {
-    label: "Facebook",
-    href: "https://facebook.com",
-    icon: Facebook,
-  },
+ 
   {
     label: "YouTube",
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@trinisourcing",
     icon: Youtube,
   },
 ];

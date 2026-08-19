@@ -13,7 +13,7 @@ import catBlaster from "@/assets/cat-blaster.jpg";
 export const categories: Category[] = [
   { id: "c1", slug: "rc-cars", name: "RC Cars", description: "Radio controlled performance machines", image: catRc, productCount: 42 },
   { id: "c2", slug: "drift-cars", name: "Drift Cars", description: "Tail-happy drift specialists", image: catRc, productCount: 18 },
-  // { id: "c3", slug: "drones", name: "Drones", description: "Camera drones & FPV racers", image: catDrone, productCount: 24 },
+  { id: "c3", slug: "drones", name: "Drones", description: "Camera drones & FPV racers", image: catDrone, productCount: 24 },
   { id: "c4", slug: "gel-blasters", name: "Gel Blasters", description: "Tactical gel blaster gear", image: catBlaster, productCount: 16 },
   { id: "c5", slug: "die-cast", name: "Licensed Die Cast", description: "Officially licensed scale models", image: catDiecast, productCount: 65 },
   { id: "c6", slug: "soft-toys", name: "Soft Toys", description: "Ultra-soft imported plush", image: catToys, productCount: 38 },

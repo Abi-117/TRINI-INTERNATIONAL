@@ -66,7 +66,7 @@ export function SearchDialog({ onClose }: { onClose: () => void }) {
               autoFocus
               value={term}
               onChange={(e) => setTerm(e.target.value)}
-              placeholder="Search RC cars, drones, jewellery, gadgets…"
+              placeholder="Search RC cars, jewellery, gadgets…"
               className="border-0 bg-transparent text-base shadow-none focus-visible:ring-0"
             />
             <Button type="button" variant="ghost" size="icon" onClick={onClose} aria-label="Close search">

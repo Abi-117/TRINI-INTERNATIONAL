@@ -28,7 +28,7 @@ import type { Category } from "@/types";
 
 const title = "Shop All Products — TRINI INTERNATIONAL";
 const description =
-  "Filter premium imported RC cars, drones, gel blasters, die cast, soft toys, jewellery, bags, gadgets and Korean stationery by category, brand, price, rating and age.";
+  "Filter premium imported RC cars, gel blasters, die cast, soft toys, jewellery, bags, gadgets and Korean stationery by category, brand, price, rating and age.";
 
 interface ShopSearch {
   q?: string;

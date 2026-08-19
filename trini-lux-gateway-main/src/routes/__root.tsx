@@ -87,7 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Imported toys, RC & drift cars, drones, gel blasters, die cast, jewellery, bags and gadgets. Same day dispatch from Trichy, delivery across India.",
+          "Imported toys, RC & drift cars, gel blasters, die cast, jewellery, bags and gadgets. Same day dispatch from Trichy, delivery across India.",
       },
       { name: "author", content: "Trini International" },
       { property: "og:site_name", content: "TRINI INTERNATIONAL" },

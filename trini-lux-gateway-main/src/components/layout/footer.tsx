@@ -74,7 +74,7 @@ export function Footer() {
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-muted-foreground">
-              Imported toys, RC &amp; drift cars, drones, gel blasters,
+              Imported toys, RC &amp; drift cars, gel blasters,
               licensed die cast, soft toys, Korean stationery, fashion
               jewellery, bags and gadgets — curated for ages 3 to adults.
             </p>

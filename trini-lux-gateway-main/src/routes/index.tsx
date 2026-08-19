@@ -13,7 +13,7 @@ import {
 
 const title = "TRINI INTERNATIONAL — Premium Imported Toys, RC Cars & Lifestyle";
 const description =
-  "Shop imported RC & drift cars, drones, gel blasters, licensed die cast, soft toys, Korean stationery, jewellery, bags and gadgets. Same day dispatch from Trichy.";
+  "Shop imported RC & drift cars, gel blasters, licensed die cast, soft toys, Korean stationery, jewellery, bags and gadgets. Same day dispatch from Trichy.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

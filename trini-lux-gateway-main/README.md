@@ -52,7 +52,6 @@ We deal with
 
 • Hobby Cars
 
-• Drones
 
 • Gel Blaster Guns
 
@@ -172,7 +171,6 @@ Bags
 
 Gadgets
 
-Drones
 
 Stationery
 
@@ -199,8 +197,6 @@ Beautiful premium cards
 RC Cars
 
 Drift Cars
-
-Drones
 
 Gel Blasters
 

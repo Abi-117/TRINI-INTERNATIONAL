@@ -1,7 +1,7 @@
 import type { Category, Product, Coupon, Review } from "@/types";
 
 import catRc from "@/assets/cat-rc.jpg";
-import catDrone from "@/assets/cat-drone.jpg";
+// import catDrone from "@/assets/cat-drone.jpg";
 import catJewellery from "@/assets/cat-jewellery.jpg";
 import catBags from "@/assets/cat-bags.jpg";
 import catGadgets from "@/assets/cat-gadgets.jpg";
@@ -13,7 +13,7 @@ import catBlaster from "@/assets/cat-blaster.jpg";
 export const categories: Category[] = [
   { id: "c1", slug: "rc-cars", name: "RC Cars", description: "Radio controlled performance machines", image: catRc, productCount: 42 },
   { id: "c2", slug: "drift-cars", name: "Drift Cars", description: "Tail-happy drift specialists", image: catRc, productCount: 18 },
-  { id: "c3", slug: "drones", name: "Drones", description: "Camera drones & FPV racers", image: catDrone, productCount: 24 },
+  // { id: "c3", slug: "drones", name: "Drones", description: "Camera drones & FPV racers", image: catDrone, productCount: 24 },
   { id: "c4", slug: "gel-blasters", name: "Gel Blasters", description: "Tactical gel blaster gear", image: catBlaster, productCount: 16 },
   { id: "c5", slug: "die-cast", name: "Licensed Die Cast", description: "Officially licensed scale models", image: catDiecast, productCount: 65 },
   { id: "c6", slug: "soft-toys", name: "Soft Toys", description: "Ultra-soft imported plush", image: catToys, productCount: 38 },
@@ -70,8 +70,8 @@ const seeds: Seed[] = [
   { title: "Velocity X1 Pro 4WD Drift RC Car", brand: "Trini Motorsport", cat: "drift-cars", price: 8499, mrp: 12999, rating: 4.8, reviews: 214, stock: 12, age: "8+", image: catRc, tags: ["flash-sale", "featured", "best-seller"] },
   { title: "Hyper Rally 1:10 Brushless RC Buggy", brand: "Kyoto RC", cat: "rc-cars", price: 14999, mrp: 19999, rating: 4.7, reviews: 148, stock: 7, age: "12+", image: catRc, tags: ["featured", "trending"] },
   { title: "Nitro Street King High Speed 60KMPH", brand: "Trini Motorsport", cat: "rc-cars", price: 6299, mrp: 8999, rating: 4.5, reviews: 96, stock: 21, age: "8+", image: catRc, tags: ["todays-deal", "best-seller"] },
-  { title: "SkyVision Pro 4K Foldable Camera Drone", brand: "AeroX", cat: "drones", price: 24999, mrp: 32999, rating: 4.9, reviews: 322, stock: 5, age: "14+", image: catDrone, tags: ["featured", "new-arrival", "trending"] },
-  { title: "FPV Racer Mini Drone with Goggles", brand: "AeroX", cat: "drones", price: 11499, mrp: 15499, rating: 4.4, reviews: 87, stock: 14, age: "14+", image: catDrone, tags: ["flash-sale"] },
+  // { title: "SkyVision Pro 4K Foldable Camera Drone", brand: "AeroX", cat: "drones", price: 24999, mrp: 32999, rating: 4.9, reviews: 322, stock: 5, age: "14+", image: catDrone, tags: ["featured", "new-arrival", "trending"] },
+  // { title: "FPV Racer Mini Drone with Goggles", brand: "AeroX", cat: "drones", price: 11499, mrp: 15499, rating: 4.4, reviews: 87, stock: 14, age: "14+", image: catDrone, tags: ["flash-sale"] },
   { title: "Tactical Gel Blaster MK-9 Electric", brand: "StormLine", cat: "gel-blasters", price: 4299, mrp: 6499, rating: 4.3, reviews: 132, stock: 30, age: "14+", image: catBlaster, tags: ["todays-deal", "trending"] },
   { title: "Gel Blaster Recon Pistol Kit", brand: "StormLine", cat: "gel-blasters", price: 2499, mrp: 3799, rating: 4.2, reviews: 58, stock: 44, age: "14+", image: catBlaster, tags: ["best-seller"] },
   { title: "Officially Licensed 1:18 GT Supercar", brand: "AutoLegend", cat: "die-cast", price: 5499, mrp: 7499, rating: 4.9, reviews: 265, stock: 9, age: "6+", image: catDiecast, tags: ["featured", "best-seller"] },
@@ -173,7 +173,7 @@ export const testimonials = [
 
 export const popularSearches = [
   "Drift RC car",
-  "4K drone",
+  // "4K drone",
   "Gel blaster",
   "Die cast 1:18",
   "Gold plated necklace",
@@ -185,7 +185,7 @@ export const popularSearches = [
 export const instagramGallery = [
   catRc,
   catJewellery,
-  catDrone,
+  // catDrone,
   catGadgets,
   catBags,
   catToys,
